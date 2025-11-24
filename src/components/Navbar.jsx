@@ -5,7 +5,8 @@ import { useContext } from "react";
 
 function Navbar() {
 
-  const value = useContext(itemContext);
+  const {item} = useContext(itemContext);
+  const {total} = useContext(totalContext);
 
   return (
     <div className={styles.container}>
